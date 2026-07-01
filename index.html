@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Life OS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+
+background:#0f1117;
+color:white;
+display:flex;
+height:100vh;
+overflow:hidden;
+
+}
+
+/* Sidebar */
+
+.sidebar{
+
+width:270px;
+background:#171a22;
+border-right:1px solid rgba(255,255,255,.05);
+
+display:flex;
+flex-direction:column;
+padding:25px;
+
+}
+
+.logo{
+
+font-size:28px;
+font-weight:700;
+margin-bottom:40px;
+
+}
+
+.logo span{
+
+color:#6ea8ff;
+
+}
+
+.menu{
+
+display:flex;
+flex-direction:column;
+gap:14px;
+
+}
+
+.menu button{
+
+background:transparent;
+border:none;
+color:#d4d4d4;
+padding:15px;
+border-radius:12px;
+cursor:pointer;
+font-size:16px;
+text-align:left;
+transition:.25s;
+
+}
+
+.menu button:hover{
+
+background:#262d3d;
+transform:translateX(5px);
+
+}
+
+.menu button.active{
+
+background:#3578ff;
+color:white;
+
+}
+
+.bottom{
+
+margin-top:auto;
+font-size:13px;
+opacity:.55;
+
+}
+
+/* Main */
+
+.main{
+
+flex:1;
+padding:45px;
+overflow:auto;
+
+}
+
+.top{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
+
+}
+
+h1{
+
+font-size:38px;
+
+}
+
+.sub{
+
+color:#9ca3af;
+margin-top:10px;
+
+}
+
+/* Cards */
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:#171a22;
+padding:25px;
+border-radius:22px;
+transition:.25s;
+cursor:pointer;
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.card:hover{
+
+transform:translateY(-7px);
+border-color:#3578ff;
+
+}
+
+.icon{
+
+font-size:34px;
+margin-bottom:18px;
+
+}
+
+.card h2{
+
+font-size:22px;
+margin-bottom:8px;
+
+}
+
+.card p{
+
+color:#9ca3af;
+line-height:1.5;
+
+}
+
+/* Progress */
+
+.progress{
+
+margin-top:45px;
+
+}
+
+.progressBox{
+
+margin-top:18px;
+background:#222;
+height:12px;
+border-radius:999px;
+overflow:hidden;
+
+}
+
+.progressFill{
+
+height:100%;
+width:72%;
+background:linear-gradient(90deg,#3578ff,#6ea8ff);
+
+}
+
+/* Journal Preview */
+
+.journal{
+
+margin-top:45px;
+background:#171a22;
+padding:30px;
+border-radius:22px;
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+textarea{
+
+margin-top:20px;
+width:100%;
+height:180px;
+background:#11151d;
+border:none;
+border-radius:16px;
+padding:20px;
+font-size:16px;
+color:white;
+resize:none;
+
+}
+
+textarea:focus{
+
+outline:2px solid #3578ff;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<div class="logo">
+Life<span>OS</span>
+</div>
+
+<div class="menu">
+
+<button class="active">🏠 Dashboard</button>
+<button>📓 Journal</button>
+<button>🧠 Mind Palace</button>
+<button>✅ Tasks</button>
+<button>📅 Calendar</button>
+<button>⚙ Settings</button>
+
+</div>
+
+<div class="bottom">
+
+Life OS v1.0
+
+</div>
+
+</div>
+
+<div class="main">
+
+<div class="top">
+
+<div>
+
+<h1>Welcome back, Ankush 👋</h1>
+
+<div class="sub">
+Wednesday • Focus on becoming 1% better today.
+</div>
+
+</div>
+
+<div>
+
+🔥 19 Day Streak
+
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<div class="icon">📓</div>
+
+<h2>Today's Journal</h2>
+
+<p>
+Continue writing today's journal.
+Autosaved every few seconds.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🧠</div>
+
+<h2>Mind Palace</h2>
+
+<p>
+Organize ideas, memories and knowledge in one place.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">✅</div>
+
+<h2>Today's Tasks</h2>
+
+<p>
+7 completed • 3 remaining
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">🎯</div>
+
+<h2>Goals</h2>
+
+<p>
+Track yearly milestones and long-term objectives.
+</p>
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<h2>Today's Progress</h2>
+
+<div class="progressBox">
+
+<div class="progressFill"></div>
+
+</div>
+
+</div>
+
+<div class="journal">
+
+<h2>Quick Journal</h2>
+
+<textarea placeholder="Write anything..."></textarea>
+
+</div>
+
+</div>
+
+</body>
+</html>
