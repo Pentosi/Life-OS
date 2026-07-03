@@ -1,75 +1,118 @@
-# React + TypeScript + Vite
+# Life OS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Life OS is a production-quality personal operating system designed to help organize and improve every aspect of life through a unified digital workspace.
 
-Currently, two official plugins are available:
+Originally built as a personal platform, Life OS is being developed with scalability in mind so that it can eventually support multiple users while maintaining high standards of performance, security, accessibility, and maintainability.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Vision
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Create a single platform that brings together productivity, planning, knowledge management, personal analytics, health tracking, finance, and other life management tools into one cohesive experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Goals
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Clean and maintainable architecture
+* Scalable application design
+* Secure by default
+* Responsive and mobile-first UI
+* Accessible user experience
+* High-performance frontend
+* Comprehensive documentation
+* Long-term maintainability
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Technology Stack
 
+### Frontend
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* React Router
+
+### Backend
+
+* Firebase Authentication
+* Cloud Firestore
+* Firebase Storage
+
+### Hosting
+
+* Cloudflare Pages
+
+---
+
+## Project Structure
+
+```text
+src/
+public/
+config/
+scripts/
+docs/
+.github/
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+See the `docs/` directory for detailed documentation.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
 
+### Install dependencies
+
+```bash
+npm install
 ```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview the production build
+
+```bash
+npm run preview
+```
+
+---
+
+## Documentation
+
+Project documentation is located in the `docs/` directory.
+
+Documentation includes:
+
+* Architecture
+* Development
+* Deployment
+* Design
+* Features
+* API
+* Architecture Decisions
+* Roadmap
+
+---
+
+## Contributing
+
+Please read `CONTRIBUTING.md` before submitting issues or pull requests.
+
+---
+
+## License
+
+This project is licensed under the MIT License unless otherwise specified.
