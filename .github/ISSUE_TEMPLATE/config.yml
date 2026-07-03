@@ -1,0 +1,7 @@
+blank_issues_enabled: false
+
+contact_links:
+
+* name: Questions and Discussions
+  url: https://github.com/<your-github-username>/life-os/discussions
+  about: Please use GitHub Discussions for general questions and ideas.

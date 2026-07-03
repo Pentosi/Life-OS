@@ -1,8 +1,31 @@
-node_modules
-dist
-coverage
-.vscode
-.idea
+# Dependencies
+
+node_modules/
+
+# Build output
+
+dist/
+build/
+
+# Coverage
+
+coverage/
+
+# Lock files
+
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
+
+# Generated files
+
+*.min.js
+*.min.css
+
+# Firebase
+
+.firebase/
+
+# Logs
+
+*.log
