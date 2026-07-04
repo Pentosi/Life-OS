@@ -12,7 +12,7 @@ export function Label({
     <label
       className={cn(
         "text-sm font-medium leading-none",
-        className,
+        className
       )}
       {...props}
     />

@@ -2,17 +2,17 @@ import type { HTMLAttributes } from "react";
 
 import { cn } from "@/lib/utils";
 
-type SeparatorProps =
-  HTMLAttributes<HTMLHRElement>;
+type SkeletonProps =
+  HTMLAttributes<HTMLDivElement>;
 
-export function Separator({
+export function Skeleton({
   className,
   ...props
-}: SeparatorProps) {
+}: SkeletonProps) {
   return (
-    <hr
+    <div
       className={cn(
-        "border-border",
+        "animate-pulse rounded-md bg-muted",
         className
       )}
       {...props}
