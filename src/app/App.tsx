@@ -12,7 +12,7 @@ import {
   Skeleton,
 } from "@/components/ui";
 
-export function App() {
+export default function App() {
   return (
     <main className="min-h-screen bg-background p-8">
       <div className="mx-auto flex max-w-4xl flex-col gap-8">
@@ -37,22 +37,10 @@ export function App() {
 
           <CardContent className="flex flex-wrap gap-3">
             <Button>Primary</Button>
-
-            <Button variant="secondary">
-              Secondary
-            </Button>
-
-            <Button variant="outline">
-              Outline
-            </Button>
-
-            <Button variant="ghost">
-              Ghost
-            </Button>
-
-            <Button variant="destructive">
-              Delete
-            </Button>
+            <Button variant="secondary">Secondary</Button>
+            <Button variant="outline">Outline</Button>
+            <Button variant="ghost">Ghost</Button>
+            <Button variant="destructive">Delete</Button>
           </CardContent>
         </Card>
 
@@ -67,9 +55,7 @@ export function App() {
 
           <CardContent className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="email">
-                Email Address
-              </Label>
+              <Label htmlFor="email">Email Address</Label>
 
               <Input
                 id="email"
@@ -86,18 +72,9 @@ export function App() {
 
           <CardContent className="flex gap-3">
             <Badge>Default</Badge>
-
-            <Badge variant="secondary">
-              Secondary
-            </Badge>
-
-            <Badge variant="outline">
-              Outline
-            </Badge>
-
-            <Badge variant="destructive">
-              Destructive
-            </Badge>
+            <Badge variant="secondary">Secondary</Badge>
+            <Badge variant="outline">Outline</Badge>
+            <Badge variant="destructive">Destructive</Badge>
           </CardContent>
         </Card>
 

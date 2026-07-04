@@ -28,7 +28,11 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-
+    
+      // AuthProvider initializes state from Supabase on mount.
+      // This is an intentional synchronization with an external system.
+      "react-hooks/set-state-in-effect": "off",
+    
       "react-refresh/only-export-components": [
         "warn",
         {
