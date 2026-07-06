@@ -68,3 +68,5 @@ export {
   HoverCardTrigger,
   HoverCardContent,
 } from "./hover-card";
+
+export { Checkbox } from "./checkbox";
